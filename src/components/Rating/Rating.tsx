@@ -3,22 +3,22 @@ import React from "react";
 type StarProps = {
     selected: boolean
 }
-function Star(props: StarProps) {
-    if(props.selected){
-     return <span style={{fontWeight: 'bold'}}>Star </span>
-    } else {
-        return <span style={{fontWeight: 'normal'}}>Star </span>
-    }
-
-
-}
-
 type RatingProps = {
-    value: number
+    value: 0 | 1 | 2 | 3 | 4 | 5
 }
+
+function Star(props: StarProps) {
+    return <span>
+        {
+            props.selected
+                ? <span style={{fontWeight: 'bold'}}>Star </span>
+                : <span style={{fontWeight: 'normal'}}>Star </span>
+        }
+    </span>
+}
+
 const Rating = (props: RatingProps) => {
     let value = props.value
-    if (value > 6 || value < 0) value = 5
         return <div>
             <Star selected={value > 0}/>
             <Star selected={value > 1}/>
@@ -27,5 +27,4 @@ const Rating = (props: RatingProps) => {
             <Star selected={value > 4}/>
         </div>
 }
-
 export default Rating

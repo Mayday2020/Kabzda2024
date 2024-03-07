@@ -1,0 +1,29 @@
+.on {
+    background-color: green;
+    border: 1px solid black;
+    padding: 5px;
+}
+.off {
+    background-color: red;
+    border: 1px solid black;
+    padding: 5px;
+}
+.none {
+    border: 1px solid black;
+    padding: 5px;
+}
+.buttons {
+    margin: 7px;
+    display: flex;
+    flex-direction: row;
+}
+.radioRed {
+    background-color: red;
+    min-width: 30px;
+    border-radius: 50%;
+
+}
+.radioGreen {
+    background-color: green;
+    min-width: 20px;
+}
