@@ -3,11 +3,13 @@ import './App.css';
 import Rating from "./components/Rating/Rating";
 import Accordion from "./components/Accordion/Accordion";
 import OnOff from "./components/OnOff/OnOff";
+import UncontrolledAccordion from "./components/UncontrolledAccordeon/UncontrolledAccordion";
+import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 
 function App() {
   return (
     <div className="App">
-        <Accordion titleValue={'Menu'} collapsed={false}/>
+        <UncontrolledAccordion titleValue={'Menu'}/>
         <Accordion titleValue={'Users'} collapsed={true}/>
         <Rating value={0}/>
         <Rating value={1}/>
@@ -15,8 +17,10 @@ function App() {
         <Rating value={3}/>
         <Rating value={4}/>
         <Rating value={5}/>
-        <OnOff mode={false}/>
-        <OnOff mode={true}/>
+        <pre/>
+        <UncontrolledRating />
+        <OnOff />
+        <OnOff />
     </div>
   );
 }

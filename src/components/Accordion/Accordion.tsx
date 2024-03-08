@@ -7,9 +7,6 @@ type AccordionPropsType = {
 type AccordionTitlePropsType = {
     title: string
 }
-type AccordionBodyPropsType = {
-
-}
 const Accordion = (props: AccordionPropsType) => {
     return <div>
         <AccordionTitle title={props.titleValue}/>
@@ -19,7 +16,7 @@ const Accordion = (props: AccordionPropsType) => {
 function AccordionTitle (props: AccordionTitlePropsType) {
     return <h3>{props.title}</h3>
 }
-function AccordionBody (props: AccordionBodyPropsType) {
+function AccordionBody () {
     return <div>
         <ul>
             <li>1</li>
