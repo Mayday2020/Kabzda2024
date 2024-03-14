@@ -2,9 +2,10 @@ import React, {useState} from "react";
 
 type StarProps = {
     selected: boolean
-    setValue: (value: number)=> void
-    starValue: number
+    setValue: (value: RatingValueType)=> void
+    starValue: RatingValueType
 }
+type RatingValueType = 1 | 2 | 3 | 4 | 5
 
 function Star(props: StarProps) {
     return <span onClick={() => props.setValue(props.starValue)}>
