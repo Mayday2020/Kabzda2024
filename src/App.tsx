@@ -15,13 +15,13 @@ function App() {
     const [on, setOn] = useState<boolean>(true)
     return (
         <div className="App">
-            <UncontrolledAccordion titleValue={'Menu'}/>
-            <Accordion titleValue={'Users'} collapsed={collapsed} setCollapsed={setCollapsed}/>
-            <Rating value={ratingValue} onClick={setRatingValue}/>
+            <Accordion titleValue={'Users'} collapsed={collapsed} setCollapsed={setCollapsed} />
+            <UncontrolledAccordion />
+            <Rating value={ratingValue} onClick={setRatingValue} />
             <pre/>
-            <UncontrolledRating/>
-            <OnOff/>
-            <UncontrolledOnOff value={on} setOn={setOn}/>
+            <UncontrolledRating />
+            <OnOff value={on} setOn={setOn} />
+            <UncontrolledOnOff />
         </div>
     );
 }

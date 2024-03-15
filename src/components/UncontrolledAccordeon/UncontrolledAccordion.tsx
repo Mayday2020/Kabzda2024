@@ -1,19 +1,17 @@
 import React, {useState} from 'react'
 
-type AccordionPropsType = {
-    titleValue: string
-}
+
 type AccordionTitlePropsType = {
     title: string
     collapsed: boolean
     setCollapsed: (collapsed: boolean)=> void
 }
 
-const UncontrolledAccordion = (props: AccordionPropsType) => {
+const UncontrolledAccordion = () => {
     const [collapsed, setCollapsed] = useState(true)
 
     return <div>
-        <AccordionTitle title={props.titleValue} setCollapsed={setCollapsed} collapsed={collapsed}/>
+        <AccordionTitle title={"Menu"} setCollapsed={setCollapsed} collapsed={collapsed}/>
         {collapsed ?  <p>-</p> : <AccordionBody />}
     </div>
 }
@@ -23,9 +21,9 @@ function AccordionTitle (props: AccordionTitlePropsType) {
 function AccordionBody () {
     return <div>
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>New game</li>
+            <li>Multiplayer</li>
+            <li>Options</li>
         </ul>
     </div>
 }

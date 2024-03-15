@@ -14,7 +14,7 @@ type RatingProps = {
 function Star(props: StarProps) {
     return <span onClick={() => props.onClick(props.value)}>
         {
-            props.selected ? <b>Star </b> : 'star '
+            props.selected ? <b>Star </b> : 'Star '
         }
     </span>
 }

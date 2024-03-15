@@ -23,9 +23,9 @@ function AccordionTitle (props: AccordionTitlePropsType) {
 function AccordionBody () {
     return <div>
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>Antony</li>
+            <li>Max</li>
+            <li>William</li>
         </ul>
     </div>
 }
