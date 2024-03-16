@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 
-
-function OnOff() {
-    let [on, setOn] = useState(true)
+type UncontrolledOnOffPropsType = {
+    defaultValue?: boolean
+}
+function UncontrolledOnOff(props: UncontrolledOnOffPropsType) {
+    let [on, setOn] = useState(props.defaultValue ? props.defaultValue : false)
 
     const onStyle = {
         width: "30px",
@@ -41,4 +43,4 @@ function OnOff() {
     </div>
 }
 
-export default OnOff
+export default UncontrolledOnOff

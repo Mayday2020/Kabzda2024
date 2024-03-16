@@ -5,7 +5,7 @@ type OnOffPropsType = {
     setOn: (value: boolean) => void
 }
 
-function UncontrolledOnOff(props: OnOffPropsType) {
+function OnOff(props: OnOffPropsType) {
 
     const onStyle = {
         width: "30px",
@@ -44,4 +44,4 @@ function UncontrolledOnOff(props: OnOffPropsType) {
     </div>
 }
 
-export default UncontrolledOnOff
+export default OnOff

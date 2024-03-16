@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
 
-
+type UncontrolledAccordionPropsType = {
+    defaultValue?: boolean
+}
 type AccordionTitlePropsType = {
     title: string
     collapsed: boolean
     setCollapsed: (collapsed: boolean)=> void
 }
 
-const UncontrolledAccordion = () => {
-    const [collapsed, setCollapsed] = useState(true)
+const UncontrolledAccordion = (props: UncontrolledAccordionPropsType) => {
+    const [collapsed, setCollapsed] = useState(props.defaultValue ? props.defaultValue : false)
 
     return <div>
         <AccordionTitle title={"Menu"} setCollapsed={setCollapsed} collapsed={collapsed}/>

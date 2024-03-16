@@ -5,8 +5,11 @@ type StarProps = {
     setValue: (value: RatingValueType)=> void
     starValue: RatingValueType
 }
-type RatingValueType = 1 | 2 | 3 | 4 | 5
+type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
 
+type UncontrolledRatingPropsType = {
+    defaultValue?: RatingValueType
+}
 function Star(props: StarProps) {
     return <span onClick={() => props.setValue(props.starValue)}>
         {
@@ -17,8 +20,8 @@ function Star(props: StarProps) {
     </span>
 }
 
-const UncontrolledRating = () => {
-    let [value, setValue] = useState(0)
+const UncontrolledRating = (props: UncontrolledRatingPropsType) => {
+    let [value, setValue] = useState(props.defaultValue ? props.defaultValue : 0)
 
     return <div>
         <Star selected={value > 0} setValue={setValue} starValue={1}/>

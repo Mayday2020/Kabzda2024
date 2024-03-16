@@ -3,7 +3,7 @@ import './App.css';
 import Rating from "./components/Rating/Rating";
 import Accordion from "./components/Accordion/Accordion";
 import OnOff from "./components/OnOff/OnOff";
-import UncontrolledAccordion from "./components/UncontrolledAccordeon/UncontrolledAccordion";
+import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
 
@@ -25,6 +25,5 @@ function App() {
         </div>
     );
 }
-
 
 export default App;
