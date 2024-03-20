@@ -15,7 +15,7 @@ function App() {
     const [on, setOn] = useState<boolean>(true)
     return (
         <div className="App">
-            <Accordion titleValue={'Users'} collapsed={collapsed} setCollapsed={setCollapsed} />
+            <Accordion titleValue={'Menu'} collapsed={collapsed} setCollapsed={setCollapsed} items={[]}/>
             <UncontrolledAccordion />
             <Rating value={ratingValue} onClick={setRatingValue} />
             <pre/>
