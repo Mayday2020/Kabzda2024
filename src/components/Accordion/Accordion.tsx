@@ -9,7 +9,7 @@ type AccordionPropsType = {
     collapsed: boolean
     setCollapsed: (collapsed: boolean) => void
     items: Array<ItemType>
-    onClick: ()=> void
+    onClick?: ()=> void
 }
 type AccordionTitlePropsType = {
     title: string
@@ -18,7 +18,7 @@ type AccordionTitlePropsType = {
 }
 type AccordionBodyPropsType = {
     items: ItemType[]
-    onClick: () => void
+    onClick?: () => void
 }
 const Accordion = (props: AccordionPropsType) => {
     return <div>
