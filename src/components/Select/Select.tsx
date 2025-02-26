@@ -31,7 +31,7 @@ const Select = (props: SelectPropsType) => {
                                                   setCollapsed={props.setCollapsed}/>}
     </div>
 }
-
+/////
 const SelectTitle = (props: SelectTitlePropsType) => {
     return <h3 onClick={() => props.setCollapsed(!props.collapsed)}>
         {props.title}
